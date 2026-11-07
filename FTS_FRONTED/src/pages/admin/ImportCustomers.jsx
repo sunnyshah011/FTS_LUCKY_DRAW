@@ -53,7 +53,7 @@ export default function ImportCustomers() {
     if (!rows.length || loading || imported) return;
 
     const confirmed = window.confirm(
-      `Import ${rows.length} CSV records into Khushi Bazar Lucky Draw?`
+      `Import ${rows.length} CSV records into Fishing Tackle Store Lucky Draw?`
     );
 
     if (!confirmed) return;

@@ -30,7 +30,7 @@ if (process.env.ADMIN_EMAIL && process.env.ADMIN_PASSWORD) {
     }
 }
 app.get("/", (req, res) =>
-    res.json({ success: true, message: "Khushi Bazar API is running." }),
+    res.json({ success: true, message: "Fishing Tackle Store API is running." }),
 );
 app.use("/api/auth", authRoutes);
 app.use("/api", dataRoutes);

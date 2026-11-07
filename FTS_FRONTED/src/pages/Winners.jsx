@@ -70,7 +70,7 @@ export default function Winners() {
       <div className="flex flex-wrap justify-between items-end gap-4 mb-8">
         <div>
           <p className="gold uppercase tracking-[.25em] text-xs">
-            Khushi Bazar Event
+            Fishing Tackle Store Event
           </p>
 
           <h1 className="text-3xl md:text-4xl font-black mt-3">

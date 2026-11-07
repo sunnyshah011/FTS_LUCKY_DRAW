@@ -74,7 +74,7 @@ export default function LiveDraw() {
       {/* Header */}
       <div className="text-center">
         <p className="gold uppercase tracking-[.3em] text-xs">
-          Khushi Bazar Event
+          Fishing Tackle Store Event
         </p>
 
         <h1 className="text-4xl md:text-5xl font-black mt-3">
