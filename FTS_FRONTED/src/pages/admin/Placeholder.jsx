@@ -1,0 +1,11 @@
+export default function Placeholder({ title }) {
+  return (
+    <section className="panel p-8">
+      <h1 className="text-3xl font-bold">{title}</h1>
+      <p className="text-stone-400 mt-3">
+        This administration module is a scaffold. Connect it to authenticated
+        Firebase Cloud Functions before using it for the real draw.
+      </p>
+    </section>
+  );
+}

@@ -1,0 +1,9 @@
+export default function PrizeCard({ title, subtitle, number }) {
+  return (
+    <div className="panel p-6 text-center">
+      <div className="text-3xl gold mb-2">{number}</div>
+      <h3 className="font-bold text-xl">{title}</h3>
+      <p className="text-stone-400 text-sm mt-1">{subtitle}</p>
+    </div>
+  );
+}

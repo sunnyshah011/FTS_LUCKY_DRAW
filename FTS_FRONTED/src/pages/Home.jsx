@@ -1,0 +1,64 @@
+import { Link } from "react-router-dom";
+import { Gift, Users, Trophy, Radio } from "lucide-react";
+import PrizeCard from "../components/PrizeCard";
+export default function Home() {
+  return (
+    <div className="space-y-12">
+      <section className="text-center py-12">
+        <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/30 px-4 py-2 text-xs uppercase tracking-[.25em] gold">
+          Fishing Tackle Store Present
+        </div>
+        <h1 className="text-4xl md:text-6xl font-black mt-6 leading-tight">
+          YOUR LUCKY NUMBER.
+          <br />
+          <span className="gold">YOUR BIG MOMENT.</span>
+        </h1>
+        <p className="text-stone-300 max-w-xl mx-auto mt-5">
+          Welcome to the Fishing Tackle Store Live Lucky Draw. Check your
+          assigned number and watch the winners being announced live.
+        </p>
+        <div className="flex justify-center gap-3 mt-8 flex-wrap">
+          <Link className="btn" to="/participants">
+            Find My Lucky Number
+          </Link>
+          <Link
+            className="border border-amber-300/40 rounded-lg px-5 py-3"
+            to="/live"
+          >
+            Watch Live Draw
+          </Link>
+        </div>
+      </section>
+      <section className="grid md:grid-cols-3 gap-4">
+        <PrizeCard number="01" title="Grand Prize" subtitle="Main winner" />
+        <PrizeCard number="02" title="Second Prize" subtitle="Main winner" />
+        <PrizeCard number="03" title="Third Prize" subtitle="Main winner" />
+      </section>
+      <section className="grid sm:grid-cols-3 gap-4">
+        <div className="panel p-5 flex gap-3">
+          <Users className="gold" />
+          <div>
+            <b>700 Lucky Numbers</b>
+            <p className="text-sm text-stone-400">One number per participant</p>
+          </div>
+        </div>
+        <div className="panel p-5 flex gap-3">
+          <Gift className="gold" />
+          <div>
+            <b>13 Winners</b>
+            <p className="text-sm text-stone-400">3 major + 10 small prizes</p>
+          </div>
+        </div>
+        <div className="panel p-5 flex gap-3">
+          <Radio className="gold" />
+          <div>
+            <b>Live Announcement</b>
+            <p className="text-sm text-stone-400">
+              Follow the draw in real time
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
